@@ -1,4 +1,4 @@
-#Clean pending OS X Calendar invites
+# Clean pending OS X Calendar invites
 
 When you have OS X **Calendar.app** configured to use google CalDAV calendars (e.g. for your custom domain) it collects more and more invites that you cannot get rid of.
 
@@ -6,7 +6,7 @@ When you have OS X **Calendar.app** configured to use google CalDAV calendars (e
 
 I created simple python script that removes these pending invites.
 
-##Code
+## Code
 
 The script itself can be found in file [https://github.com/burczyk/CalendarInvitesCleaner/blob/master/clean_calendar_invites.py](https://github.com/burczyk/CalendarInvitesCleaner/blob/master/clean_calendar_invites.py) or you can copy it from below:
 
@@ -30,13 +30,13 @@ exit_calendar()
 clean()
 ```
 
-##Running
+## Running
 
 ```bash
 $ python clean_calendar_invites.py
 ```
 
-##Abstract
+## Abstract
 
 All invites are stored in SQLite database under path `~/Library/Calendars/Calendar Cache`. 
 
@@ -56,5 +56,5 @@ The only additional thing is that it quits **Calendar.app** if it's running in t
 
 After you run the script just restart the **Calendar.app**. Some invites may still be pending. In my case they are not accepted nor rejected yet, so they are re-downloaded when Calendar starts. With these I'm afraid we cannot deal.
 
-##Do you like it?
+## Do you like it?
 Do you like this article? Share it on Twitter, Facebook, Google+ or anywhere you like so that more of us can benefit from it. Thanks!
